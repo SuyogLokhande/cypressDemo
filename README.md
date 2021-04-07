@@ -12,7 +12,7 @@ This project is created to test UI (https://meraki-web-test-v2.herokuapp.com/) u
 
 1. To run tests from cypress test runner: `npx cypress open`
 
-![cypress-test-runner] (docs/cypress_test_runner.png)
+![cypress-test-runner](/docs/cypress_test_runner.png)
 
 2. Click on individual tests to validate functionality
 
