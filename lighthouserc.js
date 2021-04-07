@@ -2,7 +2,7 @@ module.exports = {
   ci: {
     collect: {
       numberOfRuns: 5,
-      url: ['https://www.amazon.com/'],
+      url: ['https://meraki-web-test-v2.herokuapp.com/'],
     },
     assert: {
       assertions: {
