@@ -6,7 +6,7 @@ This project is created to test UI (https://meraki-web-test-v2.herokuapp.com/) u
 
 1. Clone this git repo
 
-2. Run `npm i` to install all dependencies 
+2. Run `npm i` to install all dependencies
 
 ## How to run Functionality Tests
 
@@ -27,3 +27,5 @@ This project is created to test UI (https://meraki-web-test-v2.herokuapp.com/) u
 ## How to run UI Performance Tests
 
 1. To run lighthouse: `lhci autorun`
+
+![ui-performance](/docs/ui_performance.png)
