@@ -28,19 +28,31 @@ context('Device page UI validation', () => {
   });
 
   it('Verify first device name', () => {
-    cy.verifyElementText('First device', firstDeviceName, `${devices.devicesList[0]}`);
+    cy.get(firstDeviceName)
+      .then((el)=> {
+        expect(el.text()).to.be.oneOf([`${devices.devicesList[0]}`, `${devices.devicesList[1]}`, `${devices.devicesList[2]}`, `${devices.devicesList[3]}`]);
+      });
   });
 
   it('Verify second device name', () => {
-    cy.verifyElementText('Second device', secondDeviceName, `${devices.devicesList[1]}`);
+    cy.get(secondDeviceName)
+      .then((el)=> {
+        expect(el.text()).to.be.oneOf([`${devices.devicesList[0]}`, `${devices.devicesList[1]}`, `${devices.devicesList[2]}`, `${devices.devicesList[3]}`]);
+      });
   });
 
   it('Verify third device name', () => {
-    cy.verifyElementText('Third device', thirdDeviceName, `${devices.devicesList[2]}`);
+    cy.get(thirdDeviceName)
+      .then((el)=> {
+        expect(el.text()).to.be.oneOf([`${devices.devicesList[0]}`, `${devices.devicesList[1]}`, `${devices.devicesList[2]}`, `${devices.devicesList[3]}`]);
+      });
   });
 
   it('Verify forth device name', () => {
-    cy.verifyElementText('Forth device', forthDeviceName, `${devices.devicesList[3]}`);
+    cy.get(forthDeviceName)
+      .then((el)=> {
+        expect(el.text()).to.be.oneOf([`${devices.devicesList[0]}`, `${devices.devicesList[1]}`, `${devices.devicesList[2]}`, `${devices.devicesList[3]}`]);
+      });
   });
 
 })

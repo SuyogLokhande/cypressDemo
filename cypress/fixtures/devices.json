@@ -1,5 +1,6 @@
 {
   "header": "Devices",
+  "errorMessage": "Invalid API key",
   "devicesList": [
     "Wireless other desk",
     "Wireless AP 1",

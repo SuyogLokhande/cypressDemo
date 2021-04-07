@@ -27,6 +27,7 @@ import '@percy/cypress';
 
 export const apiKeyInput = "input[name='api_key']";
 export const apiKeySubmit = "input[type='submit']";
+export const errorMessage = "p[class='message']";
 export const pageHeader = "h1";
 
 Cypress.Commands.add('login', () => {
